@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<head>
+	<title>Bus Schedule App</title>
+	<link rel="stylesheet" type="text/css" href="styles.css"></link>
+</head>
+<body>
+	<h1>Bus Schedule App</h1>
+	<h:form>
+		<h:outputLabel for="from" value="From:" />
+		<h:inputText id="from" value="#{busScheduleBean.from}" required="true" /><br />
+		<h:outputLabel for="to" value="To:" />
+		<h:inputText id="to" value="#{busScheduleBean.to}" required="true" /><br />
+		<h:commandButton value="Search" action="#{busScheduleBean.search}" />
+	</h:form>
+</body>
+</html>
